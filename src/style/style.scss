@@ -1,3 +1,5 @@
+@import './_variables.scss';
+
 body{
   
   margin: 0;
@@ -7,7 +9,7 @@ body{
   scroll-behavior: smooth;
 
   .title{
-    background: rgb(11,34,57);
+    background: $c1;
     margin: 0;
     padding: 0;
 
@@ -17,7 +19,7 @@ body{
 
     box-shadow: 0px 4px 8px #555;
     h1{
-      color: rgb(74,210,149);
+      color: $c2;
 
       font-family: sans-serif;
       padding: 1%;
@@ -28,6 +30,174 @@ body{
 
       padding-right: 2%;
       padding-left: 2%;
+    }
+  }
+  .titleD{
+    background: $c1;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0px 2px 8px cyan;
+    
+    h1{
+      color: $c2;
+
+      font-family: sans-serif;
+      padding: 1%;
+    }
+
+    img{
+      width: 100px;
+
+      padding-right: 2%;
+      padding-left: 2%;
+    }
+  }
+
+  .hhh{
+    height: 400px;
+  }
+  .mainC{
+    padding-right: 130px;
+    padding-left: 130px;
+    padding-top: 15px;
+
+    text-align: center;
+    h1{
+      color: $c1;
+
+      font-family: sans-serif;
+      font-size: 40px;
+      
+      text-decoration: underline 5px $c2;
+
+      text-align: center;
+    }
+    .card-brd{
+      display: flex;
+      
+      justify-content: center;
+      align-items: center;
+
+      .card{
+        margin: 2%;
+        box-shadow: 0px 0px 8px #555;
+
+        padding: 2%;
+
+        border-radius: 15px;
+
+        color: $c1;
+        img{
+          height: 80px;
+        }
+        &:hover{
+          font-size: 40px;
+        }
+        p{
+          font-weight: bold;
+          font-family: sans-serif;
+          font-size: 15px;
+        }
+        .link{
+          color: $c2;
+          background: $c1;
+
+          text-decoration: none;
+
+          padding-top: 2%;
+          padding-bottom: 2%;
+
+          padding-right: 5%;
+          padding-left: 5%;
+
+          font-size: 20px;
+          font-family: sans-serif;
+
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+  .mainSpeed{
+    background: rgb(35, 55, 116);
+
+    margin: 0;
+    padding: 0;
+  }
+
+  .Fdark{
+    background-color: $c1;
+    color: $c2;
+
+    height: 125px;
+
+    padding: 0;
+    margin: 0;
+
+    text-align: center;
+
+    box-shadow: 0px -2px 8px cyan;
+    p{
+      font-family: sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+
+      margin: 0;
+    }
+    h1{
+      font-family: sans-serif;
+      font-size: 20px;
+      font-weight: 200;
+      
+    }
+  }
+  footer{
+    background-color: $c1;
+    color: $c2;
+
+    height: 125px;
+
+    padding: 0;
+    margin: 0;
+
+    text-align: center;
+
+    box-shadow: 0px -4px 8px #555;
+    p{
+      font-family: sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+
+      margin: 0;
+    }
+    h1{
+      font-family: sans-serif;
+      font-size: 20px;
+      font-weight: 200;
+      
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body{
+    .hhh{
+      height: 550px;
+    }
+  }
+  .card-brd{
+    flex-direction: column;    
+  }
+
+  body{
+    .mainC{
+      padding-right: 0;
+      padding-left: 0;
     }
   }
 }
