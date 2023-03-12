@@ -141,6 +141,25 @@ body{
       color: $c2;
     }
 
+    .box{
+      color: $c2;
+      background: $c1;
+
+      margin-top: 5%;
+
+      margin-right: 5%;
+      margin-left: 5%;
+
+      padding: 2%;
+
+      border-radius: 15px;
+
+      box-shadow: 0px 0px 18px $c2;
+      .light{
+        color: white;
+      }
+    }
+
     .link{
       color: $c2;
       background: $c1;
@@ -255,7 +274,7 @@ body{
       padding-left: 0;
     }
 
-    .mainSpeed{
+    .main{
       padding-left: 0;
       padding-right: 0;
     }
