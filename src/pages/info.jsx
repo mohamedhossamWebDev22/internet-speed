@@ -4,7 +4,9 @@ import { NavLink } from "react-router-dom";
 import HeaderD from '../components/headerDark'
 import FooterD from '../components/footerDark'
 
-
+function help() {
+  alert("Try Use Another Browser Like Chrome");
+}
 
 const Info = () => {
   return (
@@ -29,6 +31,8 @@ const Info = () => {
             <a className='light'> {navigator.connection.rtt} ms</a>
           </h3>
         </div>
+
+        <button className="help" onClick={function(){help()}}>Need Help?(CLick Me!)</button>
       </div>
       <FooterD />
     </>

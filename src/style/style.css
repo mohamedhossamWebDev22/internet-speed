@@ -120,6 +120,14 @@ body .main .box {
 body .main .box .light {
   color: white;
 }
+body .main .help {
+  color: white;
+  background: rgba(65, 105, 225, 0);
+  border: 0px solid;
+  -webkit-text-decoration: 1px underline white;
+          text-decoration: 1px underline white;
+  margin-top: 5%;
+}
 body .main .link {
   color: rgb(74, 210, 149);
   background: rgb(11, 34, 57);

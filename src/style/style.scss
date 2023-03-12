@@ -160,6 +160,17 @@ body{
       }
     }
 
+    .help{
+      color: white;
+      background: rgba(65, 105, 225, 0);
+
+      border: 0px solid;
+
+      text-decoration: 1px underline white;
+
+      margin-top: 5%;
+    }
+
     .link{
       color: $c2;
       background: $c1;
