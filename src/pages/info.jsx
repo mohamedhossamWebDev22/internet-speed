@@ -1,16 +1,23 @@
 import React from 'react';
+import { NavLink } from "react-router-dom";
 
-import Header from '../components/header'
-import Footer from '../components/footer'
+import HeaderD from '../components/headerDark'
+import FooterD from '../components/footerDark'
 
 
 
 const Info = () => {
   return (
     <>
-      <Header />
-      <div className="mainC">hi info</div>
-      <Footer />
+      <HeaderD />
+      <div className="main hhh">
+        <NavLink to="/" className="link">
+          Home
+        </NavLink>
+
+        <div className="box"></div>
+      </div>
+      <FooterD />
     </>
   );
 }

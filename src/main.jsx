@@ -32,6 +32,13 @@ const router = createBrowserRouter([
   },
 ]);
 
+//website see if the network is here or not!!
+window.onoffline = () =>{
+  alert("You'r Offline, Please Check You'r Connection.")
+  window.location.reload()
+}
+
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} />
