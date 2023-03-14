@@ -31,7 +31,7 @@ const Speed = () => {
           <button
             className="link2"
             onClick={function () {
-              window.location.reload();
+              window.location.href = 'https://internet-speed11.netlify.app/';
             }}
           >
             Go
