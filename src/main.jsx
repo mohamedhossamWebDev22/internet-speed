@@ -5,6 +5,7 @@ import Home from "./pages/home";
 import Info from "./pages/info";
 import Speed from "./pages/speed";
 
+import ErrorF from './pages/error';
 
 import "./style/style.css";
 
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home/>,
+    errorElement: <ErrorF/>
   },
   {
     path: "/speed",

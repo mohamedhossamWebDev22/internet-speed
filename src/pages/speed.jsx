@@ -1,15 +1,10 @@
 import React from "react";
-import ReactDOM from 'react-dom/client';
 import { NavLink } from "react-router-dom";
 
 import HeaderD from "../components/headerDark";
 import FooterD from "../components/footerDark";
 
 import img2 from "../assets/img2.png";
-
-function getSpeed(){
-  ReactDOM.render(<p>Hello</p>, document.getElementById('speed'));
-}
 
 const Speed = () => {
   return (
