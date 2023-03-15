@@ -19,7 +19,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home/>,
-    errorElement: <ErrorF/>
+    errorElement: <ErrorF/>,
   },
   {
     path: "/speed",
