@@ -1,12 +1,16 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+import { useState } from "react";
+
 import HeaderD from "../components/headerDark";
 import FooterD from "../components/footerDark";
 
 import img2 from "../assets/img2.png";
 
 const Speed = () => {
+  const [speed, setspeed] = useState("Click The Button");
+
   return (
     <>
       <HeaderD />
@@ -19,15 +23,15 @@ const Speed = () => {
 
           <br />
 
-          <p id="speed">Your Speed Is:{navigator.connection.downlink}Mb/s</p>
+          <p id="speed">{speed}</p>
 
           <br />
 
           <button
             className="link2"
-            onClick={function () {
-              window.location.href = 'https://internet-speed11.netlify.app/';
-            }}
+            onClick={() => setspeed(
+              "You'r speed is " + navigator.connection.downlink + " Mb/s"
+            )}
           >
             Go
           </button>
